@@ -44,7 +44,7 @@ public class Admin extends JFrame {
 
 	
 	public Admin() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Admin.class.getResource("/icon.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Admin.class.getResource("/icono.png")));
 		usuario = Login.usuario;
 		sesion_usuario = 1;
 		setSize(650, 430);
@@ -106,7 +106,7 @@ public class Admin extends JFrame {
 		contentPane.add(boton_tecnico);
 		
 		JButton boton_acercade = new JButton("");
-		boton_acercade.setIcon(new ImageIcon(Admin.class.getResource("/geekipedia.png")));
+		boton_acercade.setIcon(new ImageIcon(Admin.class.getResource("/pcitmovil_icono.png")));
 		boton_acercade.setBounds(500, 240, 120, 100);
 		contentPane.add(boton_acercade);
 		
@@ -134,7 +134,7 @@ public class Admin extends JFrame {
 		JLabel label_wallpaper = new JLabel("");
 		label_wallpaper.setBounds(0, 0, 634, 391);
 		contentPane.add(label_wallpaper);
-		ImageIcon wallpaper = new ImageIcon(getClass().getResource("/wallpaperPrincipal.jpg"));
+		ImageIcon wallpaper = new ImageIcon(getClass().getResource("/background.jpg"));
 		Icon icono = new ImageIcon(wallpaper.getImage().getScaledInstance(label_wallpaper.getWidth(),label_wallpaper.getHeight(), Image.SCALE_DEFAULT ));
 		label_wallpaper.setIcon(icono);
 		this.repaint();

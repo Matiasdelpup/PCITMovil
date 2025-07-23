@@ -51,7 +51,7 @@ public class Login extends JFrame
 
 	
 	public Login() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/icon.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/icono.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(400, 550);
 		setResizable(false);
@@ -146,20 +146,20 @@ public class Login extends JFrame
 		text_usuario.setColumns(10);
 		
 		jlabel_logo = new JLabel("");
-		jlabel_logo.setBounds(52, 11, 270, 270);
+		jlabel_logo.setBounds(22, 11, 352, 270);
 		contentPane.add(jlabel_logo);
 		
 		JLabel jlabel_Wallpaper = new JLabel("");
 		jlabel_Wallpaper.setBounds(0, 0, 384, 511);
 		contentPane.add(jlabel_Wallpaper);
 		
-		ImageIcon wallpaper = new ImageIcon(getClass().getResource("/wallpaperPrincipal.jpg"));
+		ImageIcon wallpaper = new ImageIcon(getClass().getResource("/background.jpg"));
 		Icon icono = new ImageIcon(wallpaper.getImage().getScaledInstance(jlabel_Wallpaper.getWidth(),jlabel_Wallpaper.getHeight(), Image.SCALE_DEFAULT ));
 		jlabel_Wallpaper.setIcon(icono);
 		this.repaint();
 		
 		
-		ImageIcon wallpaper_logo = new ImageIcon(getClass().getResource("/DS.png"));
+		ImageIcon wallpaper_logo = new ImageIcon(getClass().getResource("/pcitmovil.png"));
 		Icon icono_logo = new ImageIcon(wallpaper_logo.getImage().getScaledInstance(jlabel_logo.getWidth(),jlabel_logo.getHeight() ,Image.SCALE_DEFAULT ));
 		jlabel_logo.setIcon(icono_logo);
 		this.repaint();
